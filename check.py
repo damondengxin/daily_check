@@ -94,12 +94,10 @@ def send_mail():
             f.write(os.path.join(dirpath,filename))
     f.close
     mail_host="smtp.exmail.qq.com"
-    mail_user = 'admin@yyft.com'
-    mail_pass = 'directive99'
-    sender = "admin@yyft.com"
-    #recerviers='dengxn@yyft.com'
-    recerviers = ['ligd@yyft.com','dengxn@yyft.com']
-    #recerviers = ['dengxn@yyft.com']
+    mail_user = 'admin@qq.com'
+    mail_pass = '123456'
+    sender = "admin@qq.com"
+    recerviers = ['test1@qq.com','test2@qq.com']
     message = MIMEMultipart()
     message['From'] = Header("%s" %(sender))
     message['To'] = Header("平台巡检")
